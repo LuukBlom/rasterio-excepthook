@@ -49,7 +49,7 @@ def build_model(
     mod.build(steps=steps)
 
 if __name__ == "__main__":
-    MODEL_DIR = ROOT / "example"
+    MODEL_DIR = ROOT / ".example"
     if MODEL_DIR.exists():
         shutil.rmtree(MODEL_DIR)
     build_model(MODEL_DIR, ROOT / "workflow.yml")
